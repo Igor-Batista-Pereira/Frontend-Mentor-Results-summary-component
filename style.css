@@ -1,0 +1,178 @@
+body {
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Hanken Grotesk";
+    font-weight: 500;
+    background-color: hsl(221, 100%, 96%);
+}
+
+.container-principal {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 650px;
+    border-radius: 32px;
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+}
+
+.result {
+    width: 50%;
+    padding: 23px 32px;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-radius: 32px;
+    gap: 16px;
+}
+
+
+.result h1 {
+    color: hsl(241, 100%, 89%);
+    margin-bottom: 16px;
+}
+
+.circulo {
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.result .circulo .pontuacao {
+    font-size: 64px;
+    color: hsl(0, 0%, 100%);
+}
+
+.result .circulo .pontuacao-total {
+    color: hsl(241, 100%, 89%);
+}
+
+.result .incentivo {
+    font-size: 23px;
+    color: hsl(0, 0%, 100%);
+    margin-top: 26px;
+}
+
+.result .incentivo-texto {
+    color: hsl(241, 100%, 89%);
+    width: 200px;
+}
+
+.summary {
+    width: 50%;
+    padding: 0px 32px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.summary .summary-texto {
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.container-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 10px;
+
+}
+
+.container-summary .abilidades {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.container-summary .abilidades .summary-ability {
+    display: flex;
+    gap: 16px;
+
+}
+
+.reaction {
+    background-color: hsl(0, 100%, 67%, .1);
+
+}
+
+.memory {
+    background-color: hsl(39, 100%, 56%, .1);
+}
+
+.verbal {
+    background-color: hsl(166, 100%, 37%, .1);
+}
+
+.visual {
+    background-color: hsl(234, 85%, 45%, .1);
+}
+
+button {
+    padding: 16px;
+    margin-bottom: 16px;
+    margin-top: 32px;
+    border: none;
+    border-radius: 32px;
+    background-color: hsl(224, 30%, 27%);
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: hsl(241, 81%, 54%);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 650px) {
+
+    body {
+        align-items: Flex-start;
+        background-color: white;
+    }
+
+    .container-principal {
+        box-shadow: none;
+        flex-direction: column;
+
+    }
+
+    .result {
+        border-radius: 0 0 1rem 1rem;
+        width: 100%;
+
+    }
+
+    .result h1 {
+        width: 250px;
+    }
+
+    .summary {
+        width: 100%;
+    }
+}
